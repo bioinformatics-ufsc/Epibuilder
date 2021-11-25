@@ -1,0 +1,80 @@
+
+---- Running Parameters ----
+BepiPred-2.0 Threshold : 0.6
+Min epitope length     : 10
+Max epitope length     : 30
+
+---- Softwares Threshold ----
+Emini                  : 0.8
+Parker                 : 0.8
+Chou Fosman            : 0.8
+Karplus Schulz         : 0.8
+Kolaskar               : 0.8
+
+---- Proteomes ----
+Alias          	File
+test_proteom   	/usr/local/bioinfo/stingrayGalaxy/tools/stingray/epifinder/test-data/proteom.fasta
+
+---- Blast ----
+Identity         : 90.0
+Cover            : 90.0
+Word size        : 4
+Task blastp-short: blastp-short
+
+---- Stats ----
+Processed proteins     : 6
+NGlycosylated proteins : 0
+Identified epitopes    : 3
+N-glycosylated epitopes: 0
+
+---- Protein Summary ----
+Id                                                                                                                                               	Epitopes	N-Glyc	
+5BVP_A Chain A of The molecular mode of action and species specificity of canakinumab, a human monoclonal antibody neutralizing IL-1beta         	0       	0     	
+4XAK_A Chain A of Crystal structure of potent neutralizing antibody m336 in complex with MERS Co-V RBD                                           	0       	0     	
+4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation                                                                	1       	0     	
+4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation                                                                	2       	0     	
+5C0N_A Chain A of Development of a therapeutic monoclonal antibody that targets secreted fatty acid-binding protein aP2 to treat type 2 diabetes.	0       	0     	
+4Z5R_A Chain A of Rontalizumab Fab bound to Interferon-a2                                                                                        	0       	0     	
+
+---- Epitopes list  ----
+N	Id                                                                               	Epitope        	Start	End	N-Glyc	N-Glyc-Count	N-Glyc-Motifs	Length	MW(kDa)	I.P 	Hydropathy	All Matches Cover	Avg Cover	BepiPred2	Emini	Parker	Chou Fosman	Karplus Schulz	Kolaskar	test_proteom_count	test_proteom_acc                                                                                                                                                   	test_proteom_count	test_proteom_id                            	
+1	4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	PETQSSHSAW     	73   	83 	N     	0           	-            	10    	1.13   	5.25	-1.40     	0.90             	0.98     	0.65     	2.57 	4.19  	1.13       	1.04          	0.99    	1                 	4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation                                                                                  	1                 	4WFF_B(100.00,100.00)                      	
+2	4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	AIFLKWHVPPELVR 	149  	163	N     	0           	-            	14    	1.71   	8.80	0.42      	0.07             	0.60     	0.64     	0.82 	-1.83 	0.83       	0.96          	1.10    	2                 	4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation,4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	2                 	4WFF_B(100.00,100.00),4WFF_A(100.00,100.00)	
+3	4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation	LKWHVPPELVRVLSA	150  	165	N     	0           	-            	15    	1.74   	8.75	0.39      	0.07             	0.59     	0.63     	0.81 	-1.70 	0.84       	0.96          	1.11    	2                 	4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation,4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	2                 	4WFF_B(100.00,100.00),4WFF_A(100.00,100.00)	
+
+---- Epitopes topology  ----
+N	Id                                                                               	         Method	Threshold	Avg Score	Cover	Epitope                 	Start	End	N-Glyc	N-Glyc-Count	N-Glyc-Motifs	Length	kDa 	I.P 	Avg Hydropathy	Avg Cover	
+1	4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	   BepiPred-2.0	0.60     	0.65     	-    	PETQSSHSAW              	73   	83 	N     	0           	-            	10    	1.13	5.25	-1.40         	0.98     	
+ 	                                                                                 	          Emini	0.80     	2.57     	0.90 	EEEEEEEEE.              	
+ 	                                                                                 	         Parker	0.80     	4.19     	1.00 	EEEEEEEEEE              	
+ 	                                                                                 	    Chou Fosman	0.80     	1.13     	1.00 	EEEEEEEEEE              	
+ 	                                                                                 	 Karplus Schulz	0.80     	1.04     	1.00 	EEEEEEEEEE              	
+ 	                                                                                 	       Kolaskar	0.80     	0.99     	1.00 	EEEEEEEEEE              	
+ 	                                                                                 	    All matches	-        	-        	0.90 	EEEEEEEEE.              	
+ 	                                                                                 	         N-Glyc	-        	-        	-    	..........              	
+ 	                                                                                 	     Hydropathy	-        	-1.40    	-    	--------+-              	
+2	4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	   BepiPred-2.0	0.60     	0.64     	-    	AIFLKWHVPPELVR          	149  	163	N     	0           	-            	14    	1.71	8.80	0.42          	0.60     	
+ 	                                                                                 	          Emini	0.80     	0.82     	0.43 	.....EEEE.EE..          	
+ 	                                                                                 	         Parker	0.80     	-1.83    	0.07 	.......E......          	
+ 	                                                                                 	    Chou Fosman	0.80     	0.83     	0.50 	.....EEEEEEE..          	
+ 	                                                                                 	 Karplus Schulz	0.80     	0.96     	1.00 	EEEEEEEEEEEEEE          	
+ 	                                                                                 	       Kolaskar	0.80     	1.10     	1.00 	EEEEEEEEEEEEEE          	
+ 	                                                                                 	    All matches	-        	-        	0.07 	.......E......          	
+ 	                                                                                 	         N-Glyc	-        	-        	-    	..............          	
+ 	                                                                                 	     Hydropathy	-        	0.42     	-    	++++---+---++-          	
+3	4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation	   BepiPred-2.0	0.60     	0.63     	-    	LKWHVPPELVRVLSA         	150  	165	N     	0           	-            	15    	1.74	8.75	0.39          	0.59     	
+ 	                                                                                 	          Emini	0.80     	0.81     	0.40 	..EEEE.EE......         	
+ 	                                                                                 	         Parker	0.80     	-1.70    	0.07 	....E..........         	
+ 	                                                                                 	    Chou Fosman	0.80     	0.84     	0.47 	..EEEEEEE......         	
+ 	                                                                                 	 Karplus Schulz	0.80     	0.96     	1.00 	EEEEEEEEEEEEEEE         	
+ 	                                                                                 	       Kolaskar	0.80     	1.11     	1.00 	EEEEEEEEEEEEEEE         	
+ 	                                                                                 	    All matches	-        	-        	0.07 	....E..........         	
+ 	                                                                                 	         N-Glyc	-        	-        	-    	...............         	
+ 	                                                                                 	     Hydropathy	-        	0.39     	-    	+---+---++-++-+         	
+Generated files:
+	./command-epifinder-parameters.txt
+	./command-epifinder-protein-summary.tsv
+	./command-epifinder-topology.tsv
+	./command-epifinder-epitope-detail.tsv
+	./command-epifinder-scores.tsv
+	./command-epifinder-epitopes-fasta.fasta

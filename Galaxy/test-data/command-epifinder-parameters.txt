@@ -1,0 +1,28 @@
+
+---- Running Parameters ----
+BepiPred-2.0 Threshold : 0.6
+Min epitope length     : 10
+Max epitope length     : 30
+
+---- Softwares Threshold ----
+Emini                  : 0.8
+Parker                 : 0.8
+Chou Fosman            : 0.8
+Karplus Schulz         : 0.8
+Kolaskar               : 0.8
+
+---- Proteomes ----
+Alias          	File
+test_proteom   	/usr/local/bioinfo/stingrayGalaxy/tools/stingray/epifinder/test-data/proteom.fasta
+
+---- Blast ----
+Identity         : 90.0
+Cover            : 90.0
+Word size        : 4
+Task blastp-short: blastp-short
+
+---- Stats ----
+Processed proteins     : 6
+NGlycosylated proteins : 0
+Identified epitopes    : 3
+N-glycosylated epitopes: 0

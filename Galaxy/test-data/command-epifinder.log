@@ -1,0 +1,14 @@
+makeblastdb -dbtype prot -in /usr/local/bioinfo/stingrayGalaxy/tools/stingray/epifinder/test-data/proteom.fasta -out ./command-test_proteom Success:
+
+
+Building a new DB, current time: 03/20/2021 00:04:04
+New DB name:   /usr/local/bioinfo/stingrayGalaxy/tools/stingray/epifinder/command-test_proteom
+New DB title:  /usr/local/bioinfo/stingrayGalaxy/tools/stingray/epifinder/test-data/proteom.fasta
+Sequence type: Protein
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 6 sequences in 0.00420094 seconds.
+Error:
+blastp -query ./command-epifinder-epitopes-fasta.fasta -db ./command-test_proteom -outfmt 6 qacc sacc pident qcovs qseq sseq qacc -task blastp-short -word_size 4 -out ./command-test_proteom_blast.csv Success:
+Error:

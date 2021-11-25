@@ -1,0 +1,70 @@
+
+---- Running Parameters ----
+BepiPred-2.0 Threshold : 0.6
+Min epitope length     : 10
+Max epitope length     : 30
+
+---- Softwares Threshold ----
+Emini                  : 0.8
+Parker                 : 0.8
+Chou Fosman            : 0.8
+Karplus Schulz         : 0.8
+Kolaskar               : 0.8
+
+---- Proteomes ----
+Alias          	File
+test_proteom   	/usr/local/bioinfo/stingrayGalaxy/tools/stingray/epifinder/test-data/proteom.fasta
+
+---- Blast ----
+Identity         : 90.0
+Cover            : 90.0
+Word size        : 4
+Task blastp-short: blastp-short
+
+---- Stats ----
+Processed proteins     : 6
+NGlycosylated proteins : 0
+Identified epitopes    : 2
+N-glycosylated epitopes: 0
+
+---- Protein Summary ----
+Id    	Epitopes	N-Glyc	
+4WFF_B	1       	0     	
+5BVP_A	0       	0     	
+4XAK_A	0       	0     	
+4WFF_A	1       	0     	
+5C0N_A	0       	0     	
+4Z5R_A	0       	0     	
+
+---- Epitopes list  ----
+N	Id    	Epitope             	Start	End	N-Glyc	N-Glyc-Count	N-Glyc-Motifs	Length	MW(kDa)	I.P 	Hydropathy	All Matches Cover	Avg Cover	BepiPred2	Emini	Parker	Chou Fosman	Karplus Schulz	Kolaskar	test_proteom_count	test_proteom_acc                                                                                                                                                   	test_proteom_count	test_proteom_id                            	
+1	4WFF_A	FLKWHVPPELVRVLSA    	149  	165	N     	0           	-            	16    	1.89   	8.75	0.54      	0.06             	0.58     	0.64     	0.78 	-1.78 	0.83       	0.96          	1.11    	2                 	4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation,4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	2                 	4WFF_B(100.00,100.00),4WFF_A(100.00,100.00)	
+2	4WFF_B	AIFLKWHVPPELVRVLSAML	149  	169	N     	0           	-            	20    	2.32   	8.80	1.03      	0.05             	0.54     	0.64     	0.67 	-2.18 	0.80       	0.95          	1.11    	2                 	4WFF_A Chain A of Human TRAAK K+ channel in a K+ bound nonconductive conformation,4WFF_B Chain B of Human TRAAK K+ channel in a K+ bound nonconductive conformation	2                 	4WFF_B(100.00,100.00),4WFF_A(100.00,100.00)	
+
+---- Epitopes topology  ----
+N	Id    	         Method	Threshold	Avg Score	Cover	Epitope                      	Start	End	N-Glyc	N-Glyc-Count	N-Glyc-Motifs	Length	kDa 	I.P 	Avg Hydropathy	Avg Cover	
+1	4WFF_A	   BepiPred-2.0	0.60     	0.64     	-    	FLKWHVPPELVRVLSA             	149  	165	N     	0           	-            	16    	1.89	8.75	0.54          	0.58     	
+ 	      	          Emini	0.80     	0.78     	0.38 	...EEEE.EE......             	
+ 	      	         Parker	0.80     	-1.78    	0.06 	.....E..........             	
+ 	      	    Chou Fosman	0.80     	0.83     	0.44 	...EEEEEEE......             	
+ 	      	 Karplus Schulz	0.80     	0.96     	1.00 	EEEEEEEEEEEEEEEE             	
+ 	      	       Kolaskar	0.80     	1.11     	1.00 	EEEEEEEEEEEEEEEE             	
+ 	      	    All matches	-        	-        	0.06 	.....E..........             	
+ 	      	         N-Glyc	-        	-        	-    	................             	
+ 	      	     Hydropathy	-        	0.54     	-    	++---+---++-++-+             	
+2	4WFF_B	   BepiPred-2.0	0.60     	0.64     	-    	AIFLKWHVPPELVRVLSAML         	149  	169	N     	0           	-            	20    	2.32	8.80	1.03          	0.54     	
+ 	      	          Emini	0.80     	0.67     	0.30 	.....EEEE.EE........         	
+ 	      	         Parker	0.80     	-2.18    	0.05 	.......E............         	
+ 	      	    Chou Fosman	0.80     	0.80     	0.35 	.....EEEEEEE........         	
+ 	      	 Karplus Schulz	0.80     	0.95     	1.00 	EEEEEEEEEEEEEEEEEEEE         	
+ 	      	       Kolaskar	0.80     	1.11     	1.00 	EEEEEEEEEEEEEEEEEEEE         	
+ 	      	    All matches	-        	-        	0.05 	.......E............         	
+ 	      	         N-Glyc	-        	-        	-    	....................         	
+ 	      	     Hydropathy	-        	1.03     	-    	++++---+---++-++-+++         	
+Generated files:
+	./online-epifinder-parameters.txt
+	./online-epifinder-protein-summary.tsv
+	./online-epifinder-topology.tsv
+	./online-epifinder-epitope-detail.tsv
+	./online-epifinder-scores.tsv
+	./online-epifinder-epitopes-fasta.fasta
