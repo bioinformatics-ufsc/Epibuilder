@@ -140,8 +140,10 @@
 		#end if
 	#end if
 
-	#if $use_search.check_use_hit == 'nousehit':
-		-nohitacc
+	#if $use_search.search_use_bool == "use":
+		#if $use_search.check_use_hit == 'nousehit':
+			-nohitacc
+		#end if
 	#end if
 	#*<!-- DONT REMOVE THIS ; -->*#
 	>log.log 2>log.log; 
@@ -401,7 +403,7 @@
 						<param name="prot_name" value="test_proteom" />
 						<param name="prot_file" value="proteom.fasta" />
 					</repeat>
-					<conditional name="check_use_hit" value="usehit"/>
+					<param name="check_use_hit" value="usehit"/>
 					<conditional name="blast">
 						<param name="blast_search" value="blastyes" />
 						<param name="blast_id" value="90" />
@@ -489,7 +491,7 @@
 						<param name="prot_name" value="test_proteom" />
 						<param name="prot_file" value="proteom.fasta" />
 					</repeat>
-					<conditional name="check_use_hit" value="usehit"/>
+					<param name="check_use_hit" value="usehit"/>
 					<conditional name="blast">
 						<param name="blast_search" value="blastyes" />
 						<param name="blast_id" value="90" />
@@ -583,4 +585,3 @@ Please cite methods used in your analysis, available bellow
 	<citation type="doi">https://doi.org/10.1093/nar/gky379</citation>
 </citations>
 </tool>
-
