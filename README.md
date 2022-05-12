@@ -7,13 +7,14 @@ Available at https://sourceforge.net/projects/epibuilder/
 
 Moreira RS, Filho VB, Calomeno NA, Wagner G, Miletti LC.
 EpiBuilder: A Tool for Assembling, Searching, and Classifying B-Cell Epitopes. 
-Bioinform Biol Insights. 2022;16:117793222210952. doi: 10.1177/11779322221095221
+Bioinform Biol Insights. 2022;16:117793222210952. doi: https://doi.org/10.1177/11779322221095221
 
-https://doi.org/10.1177/11779322221095221
 
 ---
 
 ### Also cite epitope prediction methods:
+
+Jespersen, MC, Peters, B, Nielsen, M, Marcatili, P. BepiPred-2.0: improving sequence-based B-cell epitope prediction using conformational epitopes. Nucleic Acids Res. 2017;45:W24-W29.
 
 Chou, PY, Fasman, GD. Prediction of the secondary structure of proteins from their amino acid sequence. Adv Enzymol Relat Areas Mol Biol. 2006;47:45-148.
 
